@@ -2,10 +2,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/detail.css">
     <title>Detail</title>
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="form">
         
         {% if food.title == 'Cơm gạo lứt, thịt gà sốt Leekumki' %}
             <img src="../static/images/ga.jpg"><br>
@@ -29,14 +31,14 @@
             <img src="../static/images/comga2.jpg"><br>
         
         {% endif %}
-        <b>Tên món ăn: </b> {{food.title}}<br>
-        <b>Giá: </b> {{food.price}}<br>
-        <b>Thành phần: </b> {{food.resources}}<br>
-        <b>Tổng calo: </b> {{food.calo}}<br>
-        <b>Lượng carb trong món ăn: </b> {{food.carb}}<br>
-        <b>Lượng protein trong món ăn : </b> {{food.protein}}<br>
-        <b>Lượng fat trong món ăn : </b> {{food.fat}}<br>
-    
+        <b>Tên món ăn: {{food.title}}</b> <br>
+        <b>Thành phần:  {{food.resources}}</b><br>
+        <b>Lượng carb trong món ăn:  {{food.carb}}</b><br>
+        <b>Lượng protein trong món ăn :  {{food.protein}}</b><br>
+        <b>Lượng fat trong món ăn :  {{food.fat}}</b><br>
+        <b>Tổng calo: {{food.calo}}</b> <br>
+        <b>Giá:  {{food.price}}</b>
+    </div>
 
 </body>
 </html>
